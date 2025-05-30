@@ -112,13 +112,42 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 ### Frontend Setup
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd ../frontend  # Install dependencies  npm install  # Run development server  npm run dev   `
+```bash
+cd ../frontend
 
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+```
 Open [http://localhost:3000](http://localhost:3000/) to access the frontend.
 
 ### 🧱 Project Structure Overview
+```bash
+bharat-trade-grid/
+├── backend/
+│   ├── app/
+│   │   ├── api/               # REST API routes & versioning
+│   │   ├── core/              # Configs, settings, security
+│   │   ├── models/            # Database models (ORM)
+│   │   ├── services/          # Business logic & external API clients
+│   │   ├── main.py            # FastAPI app entry point
+│   ├── tests/                 # Backend unit and integration tests
+│   ├── requirements.txt       # Python dependencies
+│   └── Dockerfile             # Backend container image
+├── frontend/
+│   ├── components/            # React components UI
+│   ├── pages/                 # Next.js pages/routes
+│   ├── public/                # Static assets
+│   ├── styles/                # CSS/SCSS files
+│   ├── package.json           # Frontend dependencies
+│   └── next.config.js         # Next.js config
+├── docker-compose.yaml        # Docker multi-service orchestration
+└── README.md                  # Project documentation
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bharat-trade-grid/  ├── backend/  │   ├── app/  │   │   ├── api/               # REST API routes & versioning  │   │   ├── core/              # Configs, settings, security  │   │   ├── models/            # Database models (ORM)  │   │   ├── services/          # Business logic & external API clients  │   │   ├── main.py            # FastAPI app entry point  │   ├── tests/                 # Backend unit and integration tests  │   ├── requirements.txt       # Python dependencies  │   └── Dockerfile             # Backend container image  ├── frontend/  │   ├── components/            # React components UI  │   ├── pages/                 # Next.js pages/routes  │   ├── public/                # Static assets  │   ├── styles/                # CSS/SCSS files  │   ├── package.json           # Frontend dependencies  │   └── next.config.js         # Next.js config  ├── docker-compose.yaml        # Docker multi-service orchestration  └── README.md                  # Project documentation   `
+```
 
 🔐 Authentication & Security
 ----------------------------
